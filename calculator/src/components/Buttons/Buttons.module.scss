@@ -1,0 +1,49 @@
+.calculatorStyle {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+
+        .upperGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .underGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .secondRow {
+        div {
+            display: flex;
+            flex-direction: column;
+
+            button {
+                background-color: #ff8000;
+            }
+
+        }
+    }
+}
+
+button {
+    color: rgba(255, 255, 255);
+    margin: 0.2rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+    &:hover {
+        border-color: #ffffff;
+    }
+}

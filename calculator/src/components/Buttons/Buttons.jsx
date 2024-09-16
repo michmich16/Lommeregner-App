@@ -1,4 +1,6 @@
-export const Button = () => {
+import s from './Buttons.module.scss'
+
+export const Buttons = () => {
 
     const calcReducer = (state, action) => {
         switch (action.type) {
@@ -22,32 +24,34 @@ export const Button = () => {
 
     return (
         <>
-            <section>
-                <div>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
+        <div className={s.calculatorStyle}>
+            <section className={s.firstRow}>
+                <div className={s.upperGrid}>
+                    <button value={1}>1</button>
+                    <button value={2}>2</button>
+                    <button value={3}>3</button>
+                    <button value={4}>4</button>
+                    <button value={5}>5</button>
+                    <button value={6}>6</button>
+                    <button value={7}>7</button>
+                    <button value={8}>8</button>
+                    <button value={9}>9</button>
                 </div>
-                <div>
+                <div className={s.underGrid}>
                     <button>.</button>
-                    <button>0</button>
+                    <button value={0}>0</button>
                     <button>=</button>
                 </div>
             </section>
-            <section>
+            <section className={s.secondRow}>
                 <div>
                     <button>+</button>
                     <button>−</button>
                     <button>×</button>
                     <button>÷</button>
                 </div>
-            </section >
+            </section>
+            </div>
         </>
     )
 
