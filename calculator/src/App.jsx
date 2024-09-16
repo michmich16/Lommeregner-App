@@ -1,11 +1,11 @@
 import './App.scss'
-import { Button } from './components/Button/Buttons'
+import {Buttons} from './components/Buttons/Buttons';
 
 function App() {
 
   return (
     <>
-
+  Button
     </>
   )
 }
